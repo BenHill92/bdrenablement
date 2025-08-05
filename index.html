@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpro BDR Commercial Enablement Infographic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #003f5c;
+            color: #ffffff;
+        }
+        .card {
+            background-color: #2f4b7c;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 350px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+                max-height: 400px;
+            }
+        }
+        .flowchart-step {
+            background-color: #665191;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            position: relative;
+            margin-bottom: 2rem;
+        }
+        .flowchart-step:not(:last-child)::after {
+            content: '▼';
+            position: absolute;
+            bottom: -1.75rem;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #ff7c43;
+            font-size: 1.5rem;
+        }
+        .stat-number {
+            font-size: 4rem;
+            font-weight: 900;
+            color: #ffa600;
+            line-height: 1;
+        }
+        .header-icon {
+            font-size: 2.5rem;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="container mx-auto p-4 md:p-8">
+        
+        <header class="text-center mb-12 md:mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">The Anatomy of a Qualified Lead</h1>
+            <p class="text-lg md:text-xl text-gray-300">A BDR's Guide to Uncovering Commercial Pain</p>
+        </header>
+
+        <main>
+            <section id="mindset" class="mb-16">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="card">
+                        <div class="header-icon mb-4">🕵️</div>
+                        <h3 class="text-2xl font-bold mb-2 text-white">Be a Detective</h3>
+                        <p class="text-gray-300">Your mission is to investigate, not to sell. Uncover the real story behind their operations.</p>
+                    </div>
+                    <div class="card">
+                        <div class="header-icon mb-4">🎯</div>
+                        <h3 class="text-2xl font-bold mb-2 text-white">Focus on Drivers</h3>
+                        <p class="text-gray-300">Commercial buyers care about two things: protecting margins and retaining contracts. Frame your questions around these.</p>
+                    </div>
+                    <div class="card">
+                        <div class="header-icon mb-4">🗣️</div>
+                        <h3 class="text-2xl font-bold mb-2 text-white">Understand Their World</h3>
+                        <p class="text-gray-300">Avoid feature-dumping. The goal is to set up a high-impact, value-driven conversation for the AE.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="discovery" class="mb-16">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">The Investigation: Key Discovery Areas</h2>
+                    <p class="text-gray-300 mt-2 max-w-3xl mx-auto">Use targeted questions to reveal hidden inefficiencies. These charts visualize the common pain points that erode a business's health from within.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card">
+                        <h3 class="text-2xl font-bold text-center mb-4 text-white">💰 Profit Margin Leaks</h3>
+                        <p class="text-center text-gray-300 mb-4">Undetected issues can silently drain profitability. The biggest culprits are often poor cost tracking, billing errors, and unexpected expenses.</p>
+                        <div class="chart-container">
+                            <canvas id="profitMarginChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-2xl font-bold text-center mb-4 text-white">📜 SLA & Contract Risks</h3>
+                        <p class="text-center text-gray-300 mb-4">Failing to meet service level agreements puts valuable contracts at risk. This is often due to manual processes and a lack of compliance visibility.</p>
+                        <div class="chart-container">
+                            <canvas id="slaComplianceChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-2xl font-bold text-center mb-4 text-white">🔍 Asset & Inventory Gaps</h3>
+                        <p class="text-center text-gray-300 mb-4">Inefficient management of assets and parts leads to wasted time and inaccurate quoting, directly impacting service delivery and renewals.</p>
+                        <div class="chart-container">
+                            <canvas id="assetManagementChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="pain-signs" class="mb-16">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Uncovering the Clues: Signs of Pain</h2>
+                    <p class="text-gray-300 mt-2 max-w-3xl mx-auto">Listen for these verbal red flags. They are direct indicators of operational friction and a strong opportunity for a Simpro solution.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card border-l-4 border-f95d6a">
+                        <h3 class="text-xl font-bold mb-3 text-white">Operational Bottlenecks</h3>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>"We still use paper forms or spreadsheets..."</li>
+                            <li>"We don't know if a job is profitable until a month later."</li>
+                            <li>"Our techs have to call the office multiple times a day."</li>
+                            <li>"We have a lot of manual data entry slowing us down."</li>
+                        </ul>
+                    </div>
+                    <div class="card border-l-4 border-ff7c43">
+                        <h3 class="text-xl font-bold mb-3 text-white">Financial Disconnect</h3>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>"Invoices get held up because techs forget to log materials."</li>
+                            <li>"We have to write off a lot of time on big projects."</li>
+                            <li>"We've struggled with cash flow because of slow billing."</li>
+                        </ul>
+                    </div>
+                    <div class="card border-l-4 border-ffa600">
+                        <h3 class="text-xl font-bold mb-3 text-white">Contract Risk</h3>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>"It's a struggle to track all the assets we maintain."</li>
+                            <li>"Our renewal process is reactive and catches us off guard."</li>
+                            <li>"We've had client complaints about missed deadlines."</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="handoff" class="mb-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">The Handoff: From Clue to Case</h2>
+                    <p class="text-gray-300 mt-2 max-w-3xl mx-auto">A successful handoff is a structured process. Gather the right intel, build confidence in the AE, and provide a clear, concise summary to ensure a successful next step.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+                    <div class="md:col-span-2">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <div class="card">
+                                <h3 class="text-xl font-bold mb-3 text-white">Qualitative Details</h3>
+                                <p class="text-gray-300">Capture the story and the context. This is the 'why' behind their pain.</p>
+                                <ul class="list-disc list-inside text-gray-300 space-y-2 mt-4">
+                                    <li>Prospect's specific language</li>
+                                    <li>Names and roles of stakeholders</li>
+                                    <li>A recent, specific challenge</li>
+                                    <li>Current software/process frustrations</li>
+                                </ul>
+                            </div>
+                            <div class="card">
+                                <h3 class="text-xl font-bold mb-3 text-white">Quantifiable Information</h3>
+                                <p class="text-gray-300">Attach numbers to the pain. This is the 'how much' that drives urgency.</p>
+                                <ul class="list-disc list-inside text-gray-300 space-y-2 mt-4">
+                                    <li>Number of techs or contracts</li>
+                                    <li>Approximate contract value</li>
+                                    <li>Estimated time or money lost</li>
+                                    <li>Key deadlines (e.g., renewals)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:col-span-1">
+                        <div class="flowchart-step">
+                            <h4 class="font-bold text-white">1. Gather Intel</h4>
+                            <p class="text-sm text-gray-300">Collect both qualitative and quantitative data.</p>
+                        </div>
+                        <div class="flowchart-step">
+                            <h4 class="font-bold text-white">2. Sell the Salesperson</h4>
+                            <p class="text-sm text-gray-300">Build confidence by highlighting the AE's expertise and experience.</p>
+                        </div>
+                        <div class="flowchart-step">
+                            <h4 class="font-bold text-white">3. Deliver Handoff Script</h4>
+                            <p class="text-sm text-gray-300">Provide a concise, pain-focused summary to the AE.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <script>
+        function wrapLabel(str, maxWidth) {
+            if (str.length <= maxWidth) {
+                return str;
+            }
+            const words = str.split(' ');
+            let lines = [];
+            let currentLine = '';
+            for (const word of words) {
+                if ((currentLine + word).length > maxWidth) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            }
+            lines.push(currentLine.trim());
+            return lines.filter(line => line.length > 0);
+        }
+
+        const chartColors = ['#d45087', '#f95d6a', '#ff7c43', '#ffa600'];
+
+        function createChart(chartId, chartData) {
+            new Chart(document.getElementById(chartId), {
+                type: 'doughnut',
+                data: chartData,
+                options: {
+                    maintainAspectRatio: false,
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'bottom',
+                            labels: {
+                                color: '#ffffff',
+                                boxWidth: 10,
+                                padding: 15,
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                title: function(tooltipItems) {
+                                    const item = tooltipItems[0];
+                                    let label = item.chart.data.labels[item.dataIndex];
+                                    if (Array.isArray(label)) {
+                                        return label.join(' ');
+                                    }
+                                    return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        const profitMarginData = {
+            labels: ['Costly Rework & Extra Visits', 'Billing Disputes from Change Orders', 'Slow Invoice-to-Payment Cycle'].map(l => wrapLabel(l, 16)),
+            datasets: [{
+                label: 'Profit Margin Leaks',
+                data: [40, 35, 25],
+                backgroundColor: chartColors,
+                borderColor: '#2f4b7c',
+                borderWidth: 2,
+                hoverOffset: 4
+            }]
+        };
+        createChart('profitMarginChart', profitMarginData);
+
+        const slaComplianceData = {
+            labels: ['Penalties for Missed Service Windows', 'Manual SLA Compliance Reporting', 'Reactive Contract Renewals'].map(l => wrapLabel(l, 16)),
+            datasets: [{
+                label: 'SLA & Contract Risks',
+                data: [45, 30, 25],
+                backgroundColor: chartColors,
+                borderColor: '#2f4b7c',
+                borderWidth: 2,
+                hoverOffset: 4
+            }]
+        };
+        createChart('slaComplianceChart', slaComplianceData);
+
+        const assetManagementData = {
+            labels: ['No Clear Asset Lifecycle Tracking', 'Inaccurate Quoting on Renewals', 'Wrong Parts Sent with Technicians'].map(l => wrapLabel(l, 16)),
+            datasets: [{
+                label: 'Asset & Inventory Gaps',
+                data: [50, 25, 25],
+                backgroundColor: chartColors,
+                borderColor: '#2f4b7c',
+                borderWidth: 2,
+                hoverOffset: 4
+            }]
+        };
+        createChart('assetManagementChart', assetManagementData);
+    </script>
+
+</body>
+</html>
