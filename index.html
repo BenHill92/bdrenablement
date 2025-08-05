@@ -270,7 +270,7 @@
         }
 
         const profitMarginData = {
-            labels: ['Costly Rework & Extra Visits', 'Billing Disputes from Change Orders', 'Slow Invoice-to-Payment Cycle'].map(l => wrapLabel(l, 16)),
+            labels: ['Costly Rework & Extra Visits', 'Billing Disputes from Change Orders', 'Slow Invoice-to-Payment Cycle'],
             datasets: [{
                 label: 'Profit Margin Leaks',
                 data: [40, 35, 25],
@@ -283,7 +283,7 @@
         createChart('profitMarginChart', profitMarginData);
 
         const slaComplianceData = {
-            labels: ['Penalties for Missed Service Windows', 'Manual SLA Compliance Reporting', 'Reactive Contract Renewals'].map(l => wrapLabel(l, 16)),
+            labels: ['Penalties for Missed Service Windows', 'Manual SLA Compliance Reporting', 'Reactive Contract Renewals'],
             datasets: [{
                 label: 'SLA & Contract Risks',
                 data: [45, 30, 25],
@@ -296,7 +296,7 @@
         createChart('slaComplianceChart', slaComplianceData);
 
         const assetManagementData = {
-            labels: ['No Clear Asset Lifecycle Tracking', 'Inaccurate Quoting on Renewals', 'Wrong Parts Sent with Technicians'].map(l => wrapLabel(l, 16)),
+            labels: ['No Clear Asset Lifecycle Tracking', 'Inaccurate Quoting on Renewals', 'Wrong Parts Sent with Technicians'],
             datasets: [{
                 label: 'Asset & Inventory Gaps',
                 data: [50, 25, 25],
