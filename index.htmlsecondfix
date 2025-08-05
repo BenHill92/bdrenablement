@@ -85,17 +85,17 @@
                     <div class="card">
                         <div class="header-icon mb-4">🕵️</div>
                         <h3 class="text-2xl font-bold mb-2 text-white">Be a Detective</h3>
-                        <p class="text-gray-300">Your mission is to investigate, not to sell. Uncover the real story behind their operations.</p>
+                        <p class="text-gray-300">Your mission is to investigate, not to sell. Uncover the real story behind their operations. It is just as important to disqualify as well as qualify in order to protect the best interest of the prospect and Simpro Group.</p>
                     </div>
                     <div class="card">
                         <div class="header-icon mb-4">🎯</div>
                         <h3 class="text-2xl font-bold mb-2 text-white">Focus on Drivers</h3>
-                        <p class="text-gray-300">Commercial buyers care about two things: protecting margins and retaining contracts. Frame your questions around these.</p>
+                        <p class="text-gray-300">Commercial buyers care about multiple things: Supporting sustainable business growth, increasing job acquisition, reducing time wastage, staying ahead of their competition. Exploring potentials ways to improve. Frame your questions around these.</p>
                     </div>
                     <div class="card">
                         <div class="header-icon mb-4">🗣️</div>
-                        <h3 class="text-2xl font-bold mb-2 text-white">Understand Their World</h3>
-                        <p class="text-gray-300">Avoid feature-dumping. The goal is to set up a high-impact, value-driven conversation for the AE.</p>
+                        <h3 class="text-2xl font-bold mb-2 text-white">Consult</h3>
+                        <p class="text-gray-300">Avoid feature-dumping. The goal is to set up a high-impact, value-driven conversation for the AE. Identify and Diagnose pain while matching to solutions, uncover the value Simpro can provide. Guide the prospect through the sales process and towards the right solution.</p>
                     </div>
                 </div>
             </section>
@@ -143,6 +143,8 @@
                             <li>"We don't know if a job is profitable until a month later."</li>
                             <li>"Our techs have to call the office multiple times a day."</li>
                             <li>"We have a lot of manual data entry slowing us down."</li>
+                            <li>"Our system is outdated and clunky."</li>
+                            <li>"Things aren't as efficient as they could be."</li>
                         </ul>
                     </div>
                     <div class="card border-l-4 border-ff7c43">
@@ -151,6 +153,7 @@
                             <li>"Invoices get held up because techs forget to log materials."</li>
                             <li>"We have to write off a lot of time on big projects."</li>
                             <li>"We've struggled with cash flow because of slow billing."</li>
+                            <li>"Features we need on our current system are behind paywalls."</li>
                         </ul>
                     </div>
                     <div class="card border-l-4 border-ffa600">
@@ -158,7 +161,47 @@
                         <ul class="list-disc list-inside text-gray-300 space-y-2">
                             <li>"It's a struggle to track all the assets we maintain."</li>
                             <li>"Our renewal process is reactive and catches us off guard."</li>
-                            <li>"We've had client complaints about missed deadlines."</li>
+                            <li>"We need to remain compliant to win this contract."</li>
+                            <li>"We need to be able to quickly produce archives."</li>
+                            <li>"We need better visibility for our clients."</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="qualification" class="mb-16">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">The Qualification: Understanding the Prospect</h2>
+                    <p class="text-gray-300 mt-2 max-w-3xl mx-auto">Let's get into the details of the Prospect's Workflows and Requirements, qualifying not just on pain but on the business's suitability for Simpro and uncovering where we can provide a solution.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card border-l-4 border-ff7c43">
+                        <h3 class="text-xl font-bold mb-3 text-white">Qualitative Details</h3>
+                        <p class="text-gray-300">Capture the story and the context. This is the 'why' behind their pain.</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2 mt-4">
+                            <li>Names and roles of key stakeholders. Will they need to attend the demonstration? Offer to add them to the meeting. The more calendars the meeting is in, the more likely it won't be forgotten/ghosted.</li>
+                            <li>How do they see their current pains affecting the business long term and how it will affect them as an individual if a solution is not found?</li>
+                            <li>Their current software/process, any frustrations with it, and potential integrations.</li>
+                        </ul>
+                    </div>
+                    <div class="card border-l-4 border-ffa600">
+                        <h3 class="text-xl font-bold mb-3 text-white">Quantifiable Information</h3>
+                        <p class="text-gray-300">Attach numbers to the pain. This is the 'how much' that drives urgency.</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2 mt-4">
+                            <li>Total number of employees, breakdown how many back-office and field users they will need.</li>
+                            <li>Approximate contract value or typical profit margin.</li>
+                            <li>The estimated time or money they think they are losing.</li>
+                            <li>Any key deadlines or events (e.g., "contract renewal is in 6 months").</li>
+                            <li>Clarify whether or not they use subcontractors and highlight that Simpro can support this model.</li>
+                        </ul>
+                    </div>
+                    <div class="card border-l-4 border-f95d6a">
+                        <h3 class="text-xl font-bold mb-3 text-white">Tips and Tricks</h3>
+                        <p class="text-gray-300">Set yourself up for success on every call, ensuring detailed quality control and consistent qualification.</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2 mt-4">
+                            <li>Lay out your questions in a specific order that will ensure the flow of the call, using a consistent flow on every call will remove filler words and streamline your calls.</li>
+                            <li>Do your research, enter the call with a clear idea of which AE it will be allocated to, this will save fumbling and streamline booking at the end of the call.</li>
+                            <li>Check ahead of call which of our customers in their industry are in their area, this will provide opportunities to name drop for credibility and provide customer anecdotes.</li>
                         </ul>
                     </div>
                 </div>
@@ -167,46 +210,24 @@
             <section id="handoff" class="mb-8">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-white">The Handoff: From Clue to Case</h2>
-                    <p class="text-gray-300 mt-2 max-w-3xl mx-auto">A successful handoff is a structured process. Gather the right intel, build confidence in the AE, and provide a clear, concise summary to ensure a successful next step.</p>
+                    <p class="text-gray-300 mt-2 max-w-3xl mx-auto">A successful handoff is a structured process. Gather the right intel, build confidence in the AE, and provide a clear, concise summary to ensure a successful next step. Now is the time to really take control, be assumptive and cement the next step.</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-                    <div class="md:col-span-2">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                            <div class="card">
-                                <h3 class="text-xl font-bold mb-3 text-white">Qualitative Details</h3>
-                                <p class="text-gray-300">Capture the story and the context. This is the 'why' behind their pain.</p>
-                                <ul class="list-disc list-inside text-gray-300 space-y-2 mt-4">
-                                    <li>Prospect's specific language</li>
-                                    <li>Names and roles of stakeholders</li>
-                                    <li>A recent, specific challenge</li>
-                                    <li>Current software/process frustrations</li>
-                                </ul>
-                            </div>
-                            <div class="card">
-                                <h3 class="text-xl font-bold mb-3 text-white">Quantifiable Information</h3>
-                                <p class="text-gray-300">Attach numbers to the pain. This is the 'how much' that drives urgency.</p>
-                                <ul class="list-disc list-inside text-gray-300 space-y-2 mt-4">
-                                    <li>Number of techs or contracts</li>
-                                    <li>Approximate contract value</li>
-                                    <li>Estimated time or money lost</li>
-                                    <li>Key deadlines (e.g., renewals)</li>
-                                </ul>
-                            </div>
-                        </div>
+                <div class="flex flex-col items-center">
+                    <div class="flowchart-step">
+                        <h4 class="font-bold text-white">1. Summarize the Call</h4>
+                        <p class="text-sm text-gray-300">Reiterate pain points to generate urgency for the next step.</p>
                     </div>
-                    <div class="md:col-span-1">
-                        <div class="flowchart-step">
-                            <h4 class="font-bold text-white">1. Gather Intel</h4>
-                            <p class="text-sm text-gray-300">Collect both qualitative and quantitative data.</p>
-                        </div>
-                        <div class="flowchart-step">
-                            <h4 class="font-bold text-white">2. Sell the Salesperson</h4>
-                            <p class="text-sm text-gray-300">Build confidence by highlighting the AE's expertise and experience.</p>
-                        </div>
-                        <div class="flowchart-step">
-                            <h4 class="font-bold text-white">3. Deliver Handoff Script</h4>
-                            <p class="text-sm text-gray-300">Provide a concise, pain-focused summary to the AE.</p>
-                        </div>
+                    <div class="flowchart-step">
+                        <h4 class="font-bold text-white">2. Sell the Salesperson</h4>
+                        <p class="text-sm text-gray-300">Compel them to meet with their AE, create urgency for the meeting. Build confidence by highlighting the AE's expertise and experience.</p>
+                    </div>
+                    <div class="flowchart-step">
+                        <h4 class="font-bold text-white">3. Arrange the Demonstration</h4>
+                        <p class="text-sm text-gray-300">Assumptively propose two times/dates that the AE is available. If you leave this too much down to the prospect to decide, they are more likely to kick you down the line. Be assumptive to secure speed to lead: "While this is fresh in our minds, let's get this booked in at (Date) / (Time)."</p>
+                    </div>
+                    <div class="flowchart-step">
+                        <h4 class="font-bold text-white">4. Signpost the Next Step</h4>
+                        <p class="text-sm text-gray-300">Lay out a clear pathway to manage expectations. Mention you'll send the meeting link and a confirmation call on the day of the demo. Send an email summarizing the pain points, the solution, and the meeting agenda, CC'ing the AE to open a line of dialogue.</p>
                     </div>
                 </div>
             </section>
